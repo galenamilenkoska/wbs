@@ -1,24 +1,24 @@
-<rdf:RDF
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-      xmlns:admin="http://webns.net/mvcb/"
-      xml:base=”http://galena.milenkoska@gmail.com/foaf.ttl#”>
-<foaf:PersonalProfileDocument rdf:about="">
-  <foaf:maker rdf:resource="#me"/>
-  <foaf:primaryTopic rdf:resource="#me"/>
-  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
-  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
-</foaf:PersonalProfileDocument>
-<foaf:Person rdf:ID="me">
-<foaf:name>Galena Milenkoska</foaf:name>
-<foaf:givenname>Galena</foaf:givenname>
-<foaf:family_name>Milenkoska</foaf:family_name>
-<foaf:mbox_sha1sum>aa55b1d076843845b6134d76f8cde464a73fbefd</foaf:mbox_sha1sum>
-<foaf:schoolHomepage rdf:resource="mailto:finki.ukim.mk"/>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Angela</foaf:name>
-<foaf:mbox_sha1sum>263518713cb197ef4e3d5c207206b255070fd29d</foaf:mbox_sha1sum>
-<rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/angelajanevska/WebBasedSystems/main/foaf.ttl"/></foaf:Person></foaf:knows></foaf:Person>
-</rdf:RDF>
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/galenamilenkoska/wbs/blob/main/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://github.com/galenamilenkoska/wbs/blob/main/foaf.ttl#me> ;
+  foaf:primaryTopic <https://github.com/galenamilenkoska/wbs/blob/main/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://github.com/galenamilenkoska/wbs/blob/main/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Galena Milenkoska" ;
+  foaf:givenname "Galena" ;
+  foaf:family_name "Milenkoska" ;
+  foaf:mbox_sha1sum "aa55b1d076843845b6134d76f8cde464a73fbefd" ;
+  foaf:schoolHomepage <mailto:finki.ukim.mk> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Angela" ;
+    foaf:mbox_sha1sum "263518713cb197ef4e3d5c207206b255070fd29d" ;
+    rdfs:seeAlso <https://https://raw.githubusercontent.com/angelajanevska/WebBasedSystems/main/foaf.ttl>
+  ] .
